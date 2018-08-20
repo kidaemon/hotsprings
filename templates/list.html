@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<p>This will be a list of hotsprings</p>
+	<ul>
+	  {% for hotspring in hotsprings %}
+	    <li><a href=' {{ url_for('hotspring',ZIP=hotspring.ZIP) }}'>{{ hotspring.Name }}</a></li>
+	  {% endfor %}
+	</ul>
+{% endblock %}

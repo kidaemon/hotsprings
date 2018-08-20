@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">{{ hotspring.Name }}</h1>
+</div>
+
+
+<div>
+  <div class="col-8">
+    <h3>Contact info</h3>
+    <p>ZIP: {{ hotspring.ZIP }}</p>
+    <p>Address: {{ hotspring.Address }}</p>
+    <p>URL: {{ hotspring.URL }}</p>
+  </div>
+
+  </div>
+</div>
+
+{% endblock %}
